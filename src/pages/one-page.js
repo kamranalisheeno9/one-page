@@ -1,15 +1,42 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col,Navbar,Nav,NavDropdown } from 'react-bootstrap';
 import MainBg from "../images/mbg.JPG";
 import MainImage from "../images/mimage.png";
 import MapBg from "../images/peoplebg.jfif";
 import MapImage from "../images/people.png";
+import { FaTwitter } from 'react-icons/fa';
+import { SiDiscord } from 'react-icons/si';
+import { SiFoodpanda } from 'react-icons/si';
+import { BsInstagram } from 'react-icons/bs';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./onepage.css";
 const OnePage = (props) => {
   return (
     <>
-      <div className="main-container">
+    <div>
+    <Navbar className="nav-bar" collapseOnSelect expand="lg" >
+  <Container>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="me-auto">
+      <Nav.Link className="nav-bar-li" href="#features">Feature</Nav.Link>
+      <Nav.Link className="nav-bar-li" href="#roadmap">Roadmap</Nav.Link>
+      <Nav.Link className="nav-bar-li" href="#faq">FAQ</Nav.Link>
+   
+    </Nav>
+    <Nav>
+    <Nav.Link className="nav-bar-li-icon" href="#features">
+    <FaTwitter />
+    </Nav.Link>
+      <Nav.Link className="nav-bar-li-icon" href="#roadmap"><SiDiscord /></Nav.Link>
+      <Nav.Link className="nav-bar-li-icon" href="#faq"><BsInstagram /></Nav.Link>
+   
+    </Nav>
+  </Navbar.Collapse>
+  </Container>
+</Navbar>
+      </div>
+      <div className="main-container-front">
 
         <img src={MainBg} className="main-bg" />
         <div className="main-image">
@@ -24,13 +51,13 @@ const OnePage = (props) => {
 
       </div>
       <div className="main-container">
-
+        
         <img src={MapBg} className="main-bg" />
         <div className="main-image">
 
           <img src={MapImage} />
-          <div className="map-text">
             <h4 className="colection-title">The Collection</h4>
+          <div className="map-text">
             <p className="colection-text">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text.
               the end of women breast located at Australia on the picture.
@@ -43,22 +70,60 @@ const OnePage = (props) => {
       </div>
 
       <div className="purple-container">
-      <Container>
-        <h1 className="roadmap-title">Roadmap</h1>
-        <p className="roadmap-text">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text.
-<br />
-<br />
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text.
-<br />
-<br />
+        <Container>
+          <h1 className="roadmap-title" id="roadmap">Roadmap</h1>
+          <p className="roadmap-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text.
+            <br />
+            <br />
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text.
+            <br />
+            <br />
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of
-        </p>
-      </Container>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of
+          </p>
+        </Container>
       </div>
       <div className="golden-container">
+        <Container>
+          <h1 className="roadmap-title" id="faq">FAQ</h1>
+          <p className="roadmap-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text.
+            <br />
+            <br />
 
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text.
+            <br />
+            <br />
+
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text.
+
+          </p>
+        </Container>
+
+      </div>
+      <div className="footer-container">
+
+        <Container fluid >
+          <Row className="justify-content-around row-footer">
+            <Col md={4} sm={3}>
+              <SiFoodpanda /> Logo
+            </Col>
+            <Col md={4} sm={2}>
+              <ul className="footer-list">
+                <li><FaTwitter /></li>
+                <li><SiDiscord /></li>
+                <li><BsInstagram /></li>
+              </ul>
+            </Col>
+            <Col md={4} sm={4} className="copyright">
+              <p>
+                Disclaimer
+                © 2021 One-Page LLC
+              </p>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </>
   );
