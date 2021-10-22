@@ -9,8 +9,9 @@
 
 .main-image img {
     position: absolute;
-    top: 0;
+    top: 5.5%;
     width: 100% !important;
+    z-index: 999;
 }
 
 .m-text {
@@ -27,51 +28,69 @@
     height: 450px;
 }
 
-.map-video {
-    width: 90%;
-    height: 90%;
-    border-bottom-right-radius: 50px;
-}
 
 .map-text {
     position: absolute;
     top: 10%;
     left: 30%;
     width: 350px;
-    height: 300px;
     margin: 0 auto;
     margin-right: 30% !important;
+    background-color: rgb(167, 167, 167);
+    color: white;
+    z-index: 100000;
 }
 
 .purple-container {
-    height: 400vh;
     background-color: #A390BB;
+    min-height: 100vh;
+}
+.roadmap-title{
+    padding: 50px 0%  0% 0%;
+    text-transform: uppercase;
+    
+}
+.roadmap-text{
+    padding: 4% 0% 6% 0%;
+    font-size: 18px;
+    margin-bottom: 0rem;
 }
 
 .golden-container {
     height: 400vh;
     background-color: #FFDDB4;
 }
+.colection-title{
+    text-align: center;
+}
+.colection-text{
+    font-size: 12px;
+    padding: 5px;
+}
+
+
+
+
+/* Media Querry */
 
 @media only screen and (max-width:1130px) {
-    .map-video {
-        width: 80%;
-        height: 80%;
-    }
     .main-video {
         width: 90%;
         height: 88%;
     }
+    .map-text{
+        width: 300px;
+    }
+    .colection-text{
+        font-size: 11px;
+    }
     .m-text {
         left: 15%;
+
     }
 }
 
 @media only screen and (max-width:1000px) {
-    .map-video {
-        width: 70%;
-        height: 70%;
-    }
     .main-video {
         width: 80%;
         height: 70%;
@@ -81,27 +100,27 @@
     }
 }
 
-@media only screen and (max-width:900px) {
-    .map-video {
-        width: 60%;
-        height: 60%;
-        border-bottom-right-radius: 30px;
-    }
+@media only screen and (max-width:930px) {
+    
     .main-video {
         width: 60%;
         height: 60%;
     }
+    
     .m-text {
         left: 5%;
     }
+    .map-text{
+        width: 240px;
+        height: 200px;
+        overflow-x: scroll;
+
+    }
+    
 }
 
 @media only screen and (max-width:750px) {
-    .map-video {
-        width: 50%;
-        height: 50%;
-        border-bottom-right-radius: 30px;
-    }
+    
     .main-video {
         width: 60%;
         height: 50%;
@@ -110,14 +129,14 @@
         width: 600px;
         left: 5%;
     }
+    .map-text{
+        width: 180px;
+        height: 150px;
+    }
 }
 
 @media only screen and (max-width:650px) {
-    .map-video {
-        width: 40%;
-        height: 40%;
-        border-bottom-right-radius: 30px;
-    }
+    
     .main-video {
         width: 90%;
         height: 45%;
@@ -126,14 +145,17 @@
         width: 400px;
         left: 15%;
     }
+    .map-text{
+        width: 150px;
+        height: 120px;
+    }
+    .colection-title{
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width:530px) {
-    .map-video {
-        width: 70%;
-        height: 50%;
-        border-bottom-right-radius: 30px;
-    }
+    
     .main-video {
         width: 120%;
         height: 35%;
@@ -143,31 +165,28 @@
         left: 25%;
     }
     .map-text {
-        width: 200px;
-        height: 200px;
+        width: 130px;
+        height: 100px;
     }
+    
 }
 
-@media only screen and (max-width:470px) {
-    .map-video {
-        width: 60%;
-        height: 45%;
-        border-bottom-right-radius: 30px;
-    }
-}
 
-@media only screen and (max-width:400px) {
-    .map-video {
-        width: 50%;
-        height: 40%;
-        border-bottom-right-radius: 30px;
-    }
+@media only screen and (max-width:420px) {
+
     .main-video {
-        width: 100%;
-        height: 28%;
+        width: 90%;
+        height: 25%;
     }
     .m-text {
         width: 200px;
-        left: 25%;
+        left: 22%;
+    }
+    .map-text {
+        width: 100px;
+        height: 80px;
+    }
+    .colection-title{
+        font-size: 16px;
     }
 }
