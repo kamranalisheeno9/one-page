@@ -19,23 +19,23 @@ const OnePage = (props) => {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-      <Nav.Link className="nav-bar-li" href="#features">Home</Nav.Link>
-      <Nav.Link className="nav-bar-li" href="#features">Collection</Nav.Link>
+      <Nav.Link className="nav-bar-li" href="#main">Home</Nav.Link>
+      <Nav.Link className="nav-bar-li" href="#collection">Collection</Nav.Link>
       <Nav.Link className="nav-bar-li" href="#roadmap">Roadmap</Nav.Link>
       <Nav.Link className="nav-bar-li" href="#faq">FAQ</Nav.Link>
    
     </Nav>
     <Nav>
     
-      <Nav.Link className="nav-bar-li-icon" href="https://twitter.com/CultureOfWomen"><FaTwitter /></Nav.Link>
-      <Nav.Link className="nav-bar-li-icon" href="https://t.co/NlrjmTHUd6?amp=1"><SiDiscord /></Nav.Link>
+      <Nav.Link className="nav-bar-li-icon" target="_blank" href="https://twitter.com/CultureOfWomen"><FaTwitter /></Nav.Link>
+      <Nav.Link className="nav-bar-li-icon" target="_blank" href="https://t.co/NlrjmTHUd6?amp=1"><SiDiscord /></Nav.Link>
    
     </Nav>
   </Navbar.Collapse>
   </Container>
 </Navbar>
       </div>
-      <div className="main-container-front">
+      <div className="main-container-front" id="main">
 
         <img src={MainBg} className="main-bg" />
         <div className="main-image">
@@ -55,7 +55,7 @@ const OnePage = (props) => {
         <div className="main-image">
 
           <img src={MapImage} />
-            <h4 className="colection-title">The Collection</h4>
+            <h4 className="colection-title" id="collection">The Collection</h4>
           <div className="map-text">
             <p className="colection-text">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text.
@@ -110,8 +110,8 @@ const OnePage = (props) => {
             </Col>
             <Col md={4} sm={4}>
               <ul className="footer-list">
-                <li><a href="https://twitter.com/CultureOfWomen"> <FaTwitter /></a></li>
-                <li><a href="https://t.co/NlrjmTHUd6?amp=1"> <SiDiscord /> </a></li>
+                <li><a target="_blank" href="https://twitter.com/CultureOfWomen"> <FaTwitter /></a></li>
+                <li><a target="_blank" href="https://t.co/NlrjmTHUd6?amp=1"> <SiDiscord /> </a></li>
               </ul>
             </Col>
             <Col md={4} sm={4} className="copyright">
