@@ -3,11 +3,11 @@ import { Container, Row, Col,Navbar,Nav,NavDropdown } from 'react-bootstrap';
 import MainBg from "../images/mbg.JPG";
 import MainImage from "../images/mimage.png";
 import MapBg from "../images/peoplebg.jfif";
+import Logo from "../images/logo.png";
 import MapImage from "../images/people.png";
 import { FaTwitter } from 'react-icons/fa';
 import { SiDiscord } from 'react-icons/si';
-import { SiFoodpanda } from 'react-icons/si';
-import { BsInstagram } from 'react-icons/bs';
+// import { SiFoodpanda } from 'react-icons/si';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./onepage.css";
 const OnePage = (props) => {
@@ -25,11 +25,9 @@ const OnePage = (props) => {
    
     </Nav>
     <Nav>
-    <Nav.Link className="nav-bar-li-icon" href="#features">
-    <FaTwitter />
-    </Nav.Link>
-      <Nav.Link className="nav-bar-li-icon" href="#roadmap"><SiDiscord /></Nav.Link>
-      <Nav.Link className="nav-bar-li-icon" href="#faq"><BsInstagram /></Nav.Link>
+    
+      <Nav.Link className="nav-bar-li-icon" href="https://twitter.com/CultureOfWomen"><FaTwitter /></Nav.Link>
+      <Nav.Link className="nav-bar-li-icon" href="https://t.co/NlrjmTHUd6?amp=1"><SiDiscord /></Nav.Link>
    
     </Nav>
   </Navbar.Collapse>
@@ -107,19 +105,17 @@ const OnePage = (props) => {
         <Container fluid >
           <Row className="justify-content-around row-footer">
             <Col md={4} sm={3}>
-              <SiFoodpanda /> Logo
+              <img className="logo-img" src={Logo} />
             </Col>
-            <Col md={4} sm={2}>
+            <Col md={4} sm={4}>
               <ul className="footer-list">
-                <li><FaTwitter /></li>
-                <li><SiDiscord /></li>
-                <li><BsInstagram /></li>
+                <li><a href="https://twitter.com/CultureOfWomen"> <FaTwitter /></a></li>
+                <li><a href="https://t.co/NlrjmTHUd6?amp=1"> <SiDiscord /> </a></li>
               </ul>
             </Col>
             <Col md={4} sm={4} className="copyright">
               <p>
-                Disclaimer
-                © 2021 One-Page LLC
+              © 2021 Anna Chukhraienko
               </p>
             </Col>
           </Row>
