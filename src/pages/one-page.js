@@ -19,7 +19,8 @@ const OnePage = (props) => {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-      <Nav.Link className="nav-bar-li" href="#features">Feature</Nav.Link>
+      <Nav.Link className="nav-bar-li" href="#features">Home</Nav.Link>
+      <Nav.Link className="nav-bar-li" href="#features">Collection</Nav.Link>
       <Nav.Link className="nav-bar-li" href="#roadmap">Roadmap</Nav.Link>
       <Nav.Link className="nav-bar-li" href="#faq">FAQ</Nav.Link>
    
