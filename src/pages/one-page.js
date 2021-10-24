@@ -28,7 +28,7 @@ const OnePage = (props) => {
     <Nav>
     
       <Nav.Link className="nav-bar-li-icon" target="_blank" href="https://twitter.com/CultureOfWomen"><FaTwitter /></Nav.Link>
-      <Nav.Link className="nav-bar-li-icon" target="_blank" href="https://t.co/NlrjmTHUd6?amp=1"><SiDiscord /></Nav.Link>
+      <Nav.Link className="nav-bar-li-icon" target="_blank" href="https://discord.com/invite/wxaR8J52bv"><SiDiscord /></Nav.Link>
    
     </Nav>
   </Navbar.Collapse>
@@ -111,7 +111,7 @@ const OnePage = (props) => {
             <Col md={4} sm={4}>
               <ul className="footer-list">
                 <li><a target="_blank" href="https://twitter.com/CultureOfWomen"> <FaTwitter /></a></li>
-                <li><a target="_blank" href="https://t.co/NlrjmTHUd6?amp=1"> <SiDiscord /> </a></li>
+                <li><a target="_blank" href="https://discord.com/invite/wxaR8J52bv"> <SiDiscord /> </a></li>
               </ul>
             </Col>
             <Col md={4} sm={4} className="copyright">
