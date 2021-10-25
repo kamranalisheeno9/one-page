@@ -7,22 +7,22 @@ import Logo from "../images/logo.png";
 import MapImage from "../images/people.png";
 import { FaTwitter } from 'react-icons/fa';
 import { SiDiscord } from 'react-icons/si';
-// import { SiFoodpanda } from 'react-icons/si';
+import {Link} from 'react-scroll'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./onepage.css";
 const OnePage = (props) => {
   return (
     <>
-    <div>
+    <div id="main">
     <Navbar className="nav-bar" collapseOnSelect expand="lg" >
   <Container>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-      <Nav.Link className="nav-bar-li" href="#main">Home</Nav.Link>
-      <Nav.Link className="nav-bar-li" href="#collection">Collection</Nav.Link>
-      <Nav.Link className="nav-bar-li" href="#roadmap">Roadmap</Nav.Link>
-      <Nav.Link className="nav-bar-li" href="#faq">FAQ</Nav.Link>
+      <Nav.Link className="nav-bar-li" ><Link activeClass="active" to="home" >Home </Link></Nav.Link>
+      <Nav.Link className="nav-bar-li" ><Link activeClass="active" to="collection">Collection</Link></Nav.Link>
+      <Nav.Link className="nav-bar-li" ><Link activeClass="active" to="roadmap" >Roadmap</Link></Nav.Link>
+      <Nav.Link className="nav-bar-li" ><Link activeClass="active" to="faq" >FAQ</Link></Nav.Link>
    
     </Nav>
     <Nav>
@@ -35,7 +35,7 @@ const OnePage = (props) => {
   </Container>
 </Navbar>
       </div>
-      <div className="main-container-front" id="main">
+      <div className="main-container-front" id="home" >
 
         <img src={MainBg} className="main-bg" />
         <div className="main-image">
@@ -49,13 +49,13 @@ const OnePage = (props) => {
 
 
       </div>
-      <div className="main-container">
+      <div className="main-container" id="collection">
         
         <img src={MapBg} className="main-bg" />
         <div className="main-image">
 
           <img src={MapImage} />
-            <h4 className="colection-title" id="collection">The Collection</h4>
+            <h4 className="colection-title" >The Collection</h4>
           <div className="map-text">
             <p className="colection-text">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text.
@@ -68,9 +68,9 @@ const OnePage = (props) => {
 
       </div>
 
-      <div className="purple-container">
+      <div className="purple-container" id="roadmap">
         <Container>
-          <h1 className="roadmap-title" id="roadmap">Roadmap</h1>
+          <h1 className="roadmap-title" >Roadmap</h1>
           <p className="roadmap-text">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text.
             <br />
@@ -83,9 +83,9 @@ const OnePage = (props) => {
           </p>
         </Container>
       </div>
-      <div className="golden-container">
+      <div className="golden-container " id="faq">
         <Container>
-          <h1 className="roadmap-title" id="faq">FAQ</h1>
+          <h1 className="roadmap-title" >FAQ</h1>
           <p className="roadmap-text">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... Contrary to popular belief, Lorem Ipsum is not simply random text.
             <br />

@@ -1,6 +1,10 @@
+html {
+    scroll-behaviour: smooth;
+   }
 *{
     font-family: 'Patrick Hand SC', cursive;
 }
+
 .main-container-front {
     position: relative;
 }
@@ -62,7 +66,8 @@
 }
 .purple-container {
     background-color: #A390BB;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    width: 100%;
 }
 .roadmap-title{
     padding: 50px 0%  0% 0%;
